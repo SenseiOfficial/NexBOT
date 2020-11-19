@@ -1,8 +1,5 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f7c51539e67b483bb8d7749acca51d3a)]
-utm_source=github.com&utm_medium=referral&utm_content=HellBoy-OP/HellBot&utm_campaign=Badge_Grade_Settings)
-[![Python 3.6](https://img.shields.io/badge/Python-3.6%20or%20newer-blue.svg)](https://www.python.org/downloads/release/python-360/)
-![GitHub repo size](https://github.com/SenseiOfficial/NexBOT)
-[![Contact Me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/sensei_nex)
+
+
 
 
 # Nexᗷᗝ丅
@@ -29,6 +26,7 @@ utm_source=github.com&utm_medium=referral&utm_content=HellBoy-OP/HellBot&utm_cam
 
 
 ## Join our Support Channel and Group regrading bug fixes
+[![Contact Me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/sensei_nex)
 
 <a href="https://t.me/SenseiMAXprojects"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 
