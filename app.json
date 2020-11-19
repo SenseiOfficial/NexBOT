@@ -1,7 +1,7 @@
 {
-  "name": "Hêllẞø†",
-  "description": "The best userbot made by @Kraken_The_BadASS. Made with Love And Phone And Hardwork and... Nhi aur kahi se to nhi bana....For Support Join @HellBot_Official ",
-  "logo": "https://telegra.ph/file/7decf235312af8536e9aa.jpg ",
+  "name": "NexBOT",
+  "description": "The G.O.A.T. userbot made by @Ksensei_nex. for giving a new telegram experience....For Support Join @NexBOT_official ",
+  "logo": "https://thumbs.gfycat.com/IdealisticBoringAmericancicada-mobile.mp4 ",
     "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,8 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/HellBoy-OP/HellBot/",
-  "website": "https://github.com/HellBoy-OP/HellBot/",
-  "success_url": "https://t.me/HellBot_Official",
+  "repository": "https://github.com/SenseiOfficial/NexBOT/",
+  "success_url": "https://t.me/NexBOT_official",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
@@ -28,12 +27,12 @@
       "required": false
     },
     "ALIVE_NAME": {
-      "description": "Fill your Full name or Username like @Kraken_The_BadASS.",
+      "description": "Fill your Full name or Username like @Sensei_nex",
       "value": "",
       "required": false
     },
     "ALIVE_MSG": {
-      "description": "Set Custom awake Message When entering .hell command.",
+      "description": "Set Custom awake Message When entering .alivecommand.",
       "value": "",
       "required": false
     },
@@ -102,7 +101,7 @@
        "value": ""
     }, 
     "STRING_SESSION": {
-      "description": "Get this value by running https://Hellbot.hellboyop.repl.run/ ",
+      "description": "Get this value by running https://repl.it/@SenseiOfficial/String-Session-1/ ",
       "value": ""
     },
     "GITHUB_ACCESS_TOKEN": {
@@ -111,7 +110,7 @@
       "required": false
     },
     "GIT_REPO_NAME": {
-      "description": "Your repo name Example: HellBoy-OP/HellBot , but GITHUB_ACCESS_TOKEN must be setup first.",
+      "description": "Your repo name Example: SenseiOfficial/NexBOT , but GITHUB_ACCESS_TOKEN must be setup first.",
       "value": "",
       "required": false
     },
