@@ -1,41 +1,30 @@
 import asyncio
 from telethon import events
-from userbot.utils import admin_cmd, sudo_cmd
-from userbot import ALIVE_NAME, hellversion
+from uniborg.util import admin_cmd
+from userbot import ALIVE_NAME
 from telethon.tl.types import ChannelParticipantsAdmins
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Hell User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Unknown"
+PM_IMG = "https://media.giphy.com/media/3oEjI0naHAj6j8Bn2M/giphy.gif"
+pm_caption = "⚠️ ᔕᗴᑎᔕᗴᎥᗰᗩ᙭-Kingbot is On 🔥 FIRE �⚠️ \n\n"
+pm_caption += "🔸**SYSTEM STATU**\n"
+pm_caption += "🔹TELETHON VERSION : **6.0.9**\n ⭕️ Python: **3.7.4**\n"
+pm_caption += "🔸DATABASE STATUS  : **Functional**\n"
+pm_caption += "🔹**Current Branch** : `Master`\n"
+pm_caption += "🔸**ᔕᗴᑎᔕᗴᎥᗰᗩ᙭ OS** :   1.14`\n"
+pm_caption += f"🔹**My Boss** : {DEFAULTUSER} \n"
+pm_caption += "🔸**Made By 😎** : [This Peros](https://t.me/senseimaxxx)\n\n"
+pm_caption += "🔻Deploy ᔕᗴᑎᔕᗴᎥᗰᗩ᙭-Kingbot : [ℝ𝕖𝕡𝕠](https://github.com/SenseiMAX/SenseiMAX-Kingbot)\n"
 
-ludosudo = Config.SUDO_USERS
-
-if ludosudo:
-    sudou = "True"
-else:
-    sudou = "False"
-
-kraken = bot.uid
-
-PM_IMG = "https://telegra.ph/file/80e5200c615cf0cb57aa9.mp4"
-pm_caption = "__**🔥🔥ɦɛʟʟɮօt ɨs օռʟɨռɛ🔥🔥**__\n\n"
-
-pm_caption += f"               __↼🄼🄰🅂🅃🄴🅁⇀__\n**『[{DEFAULTUSER}](tg://user?id={kraken})』**\n\n"
-
-pm_caption += "🛡️TELETHON🛡️ : 1.15.0 \n"
-
-pm_caption += f"😈Hêllẞø†😈       : `{hellversion}`\n"
-
-pm_caption += "⚠️CHANNEL⚠️   : [ᴊᴏɪɴ](https://t.me/HellBot_Official)\n"
-
-pm_caption += f"⚜️Sudo⚜️            : `{sudou}`\n"
-
-pm_caption += "🔥CREATOR🔥    : [Nub Here](https://t.me/kraken_the_badass)\n\n"
-
-pm_caption += "         [✨REPO✨](https://github.com/hellboy-op/hellbot) 🔹 [📜License📜](https://github.com/HellBoy-OP/HellBot/blob/master/LICENSE)"
-#@command(outgoing=True, pattern="^.alive$")
-@bot.on(admin_cmd(outgoing=True, pattern="alive$"))
-@bot.on(sudo_cmd(pattern="alive$", allow_sudo=True))
-async def amireallyalive(alive):
+@borg.on(admin_cmd(pattern=r"alive"))
+async def friday(alive):
     chat = await alive.get_chat()
-    await alive.delete()
     """ For .alive command, check if the bot is running.  """
     await borg.send_file(alive.chat_id, PM_IMG,caption=pm_caption)
-    await alive.delete() 
+    await alive.delete()
+
+    
+@borg.on(admin_cmd(pattern=r"Alive", allow_sudo=True))
+async def friday(alive):
+    chat = await alive.get_chat()
+    """ For .alive command, check if the bot is running.  """
+    await borg.send_file(alive.chat_id, PM_IMG,caption=pm_caption)
