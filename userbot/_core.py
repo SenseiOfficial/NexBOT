@@ -8,7 +8,7 @@ from userbot import ALIVE_NAME
 from userbot import bot
 
 DELETE_TIMEOUT = 5
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Hell User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Nex User"
 
 
 @bot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
@@ -31,7 +31,7 @@ async def send(event):
         end = datetime.now()
         time_taken_in_ms = (end - start).seconds
         await pro.edit(
-            f"**⍟ Plugin name ≈** `{input_str}`\n**⍟ Uploaded in ≈** `{time_taken_in_ms} secs`\n**⍟ Uploaded by≈** [{DEFAULTUSER}](tg://user?id={kraken})\n"
+            f"**⍟ Plugin name ≈** `{input_str}`\n**⍟ Uploaded in ≈** `{time_taken_in_ms} secs`\n**⍟ Uploaded by≈** [{DEFAULTUSER}](tg://user?id={Sensei})\n"
         )
         await asyncio.sleep(DELETE_TIMEOUT)
         await event.delete()
@@ -55,7 +55,7 @@ async def install(event):
                 shortname = path1.stem
                 load_module(shortname.replace(".py", ""))
                 await event.edit(
-                    "Plugin successfully installed\n @HellBot_Official `{}`".format(
+                    "Plugin successfully installed\n @NexBOT_offical `{}`".format(
                         os.path.basename(downloaded_file_name)
                     )
                 )
