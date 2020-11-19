@@ -49,7 +49,7 @@ for name in files:
 
 import userbot._core
 
-print("➠ The most Powerful NexBOT is on fire 🔥. Check .alive to test that bot is functioning or not . Join https://t.me/NexBOToffcial for any assistance 👀  "")
+print("➠ The most Powerful NexBOT is on fire 🔥. Check .alive to test that bot is functioning or not . Join https://t.me/NexBOToffcial for any assistance 👀  ")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
